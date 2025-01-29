@@ -1,6 +1,5 @@
 import Button from "./Button"
 
-
 const Child = ({ count, onSetCount, decrementCount, resetCount }) => {
   return (
     <div>
