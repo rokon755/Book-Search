@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      {/* <Avatar /> */}
+      <Avatar />
       <Boimela />
 
     </>
