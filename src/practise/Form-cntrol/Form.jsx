@@ -26,6 +26,10 @@ const Form = () => {
     console.log(`Password is: ${Pass}`)
   }
 
+
+  const bgButton = ['mt-5 bg-blue-500 text-white pl-6 pr-6 pt-3 pb-3 rounded-md block w-[100%] cursor-pointer']
+
+
   return (
     <>
       <form action="" onSubmit={finalValue} className="border-1 border-gray-300 rounded-md mt-5 p-5.5 mb-5 max-w-150 m-auto">
@@ -62,7 +66,7 @@ const Form = () => {
             className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
         </div>
-        <button type="submit" className="mt-5 bg-blue-500 text-white pl-6 pr-6 pt-3 pb-3 rounded-md block w-[100%] cursor-pointer">Submit</button>
+        <button type="submit" className={bgButton}>Submit</button>
       </form>
     </>
   )
