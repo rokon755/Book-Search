@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Form = () => {
+
   const [Name, setName] = useState("")
   const [Email, setEmail] = useState("")
   const [Pass, setPass] = useState("")
