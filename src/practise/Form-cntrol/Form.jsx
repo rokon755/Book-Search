@@ -36,7 +36,7 @@ const Form = () => {
             value={Name}
             onChange={inputName}
             required
-            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%]"
+            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
         </div>
         <div>
@@ -47,7 +47,7 @@ const Form = () => {
             value={Email}
             onChange={inputEmail}
             required
-            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%]"
+            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
         </div>
         <div>
@@ -58,7 +58,7 @@ const Form = () => {
             value={Pass}
             onChange={inputPass}
             required
-            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%]"
+            className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
         </div>
         <button type="submit" className="mt-5 bg-blue-500 text-white pl-6 pr-6 pt-2 pb-2 rounded-md">Submit</button>
