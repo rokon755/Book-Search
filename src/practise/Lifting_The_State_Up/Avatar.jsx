@@ -21,7 +21,6 @@ const Avatar = () => {
   ]
 
   const allList = [];
-  console.log("🚀 ~ Avatar ~ allList:", allList)
   listUL.map((list) => {
     const result =
       <div key={list.id} className="mb-5.5 text-center">
