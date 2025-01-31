@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Form = () => {
 
   const [Name, setName] = useState("")
   const [Email, setEmail] = useState("")
   const [Pass, setPass] = useState("")
+
+  const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
 
   const inputName = (e) => {
@@ -19,11 +22,33 @@ const Form = () => {
     setPass(e.target.value);
   }
 
+  // Validation
+  const validateForm = () => {
+    let myErrors = {};
+
+    if (!Name) myErrors.Name = "Name is required";
+    if (!Email.includes("@")) myErrors.Email = "Email is required";
+    if (Pass.length < 6) myErrors.Pass = "Password must be 6 characters";
+
+    setErrors(myErrors);
+
+    return Object.keys(myErrors).length === 0; // return true, if no errors
+  };
+
   const finalValue = (e) => {
     e.preventDefault()
+
     console.log(`Name is: ${Name}`)
     console.log(`Email is: ${Email}`)
     console.log(`Password is: ${Pass}`)
+
+    if (validateForm()) {
+      setSuccessMessage("Form Submission Successfully!");
+      setName("");
+      setEmail("");
+      setPass("");
+    }
+
   }
 
 
@@ -40,9 +65,9 @@ const Form = () => {
             placeholder="Name"
             value={Name}
             onChange={inputName}
-            required
             className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
+          {errors.Name && <p style={{ color: "red" }}>{errors.Name}</p>}
         </div>
         <div>
           <label className="block text-left mt-5">Email</label>
@@ -51,9 +76,9 @@ const Form = () => {
             placeholder="Email"
             value={Email}
             onChange={inputEmail}
-            required
             className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
+          {errors.Email && <p style={{ color: "red" }}>{errors.Email}</p>}
         </div>
         <div>
           <label className="block text-left mt-5">Password</label>
@@ -62,11 +87,12 @@ const Form = () => {
             placeholder="Password"
             value={Pass}
             onChange={inputPass}
-            required
             className="border-1 rounded-md p-1.5 border-gray-300 w-[100%] focus:outline-none"
           />
+          {errors.Pass && <p style={{ color: "red" }}>{errors.Pass}</p>}
         </div>
         <button type="submit" className={bgButton}>Submit</button>
+        {successMessage && <p style={{ color: "green", marginTop: "10px" }}>{successMessage}</p>}
       </form>
     </>
   )
