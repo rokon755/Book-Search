@@ -18,14 +18,14 @@ const DataFetch = () => {
 
 
   return (
-    <div className="border-1 border-gray-300 rounded-md mt-5 p-5.5 mb-5 max-w-300 m-auto">
+    <div className="rounded-md mt-5 p-5.5 mb-5 max-w-300 m-auto">
       <h2 className="text-center text-2xl pb-10">Fetched Data from API</h2>
       {loading ? (
         <p>Loading data...</p>
       ) : (
         <ul className="flex flex-wrap gap-2.5">
-          {posts.slice(0, 5).map((post) => (
-            <li key={post.id} className="w-[19.3%] bg-gray-200 p-3 rounded-md">
+          {posts.slice(0, 8).map((post) => (
+            <li key={post.id} className="w-[24.3%] bg-gray-100 border-1 border-gray-200 p-3 rounded-md">
               <h3 className="mb-3 text-1xl font-bold">{post.title}</h3>
               <p>{post.body}</p>
             </li>
