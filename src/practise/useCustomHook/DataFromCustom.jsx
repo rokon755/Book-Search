@@ -24,4 +24,4 @@ const DataFromCustom = () => {
   )
 }
 
-export default DataFromCustom
+export default DataFromCustom 
