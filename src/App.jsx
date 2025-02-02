@@ -10,9 +10,9 @@ function App() {
 
   return (
     <>
-      <DataFromCustom />
-      <DataFetch />
-      <Toggle />
+      {/* <DataFromCustom /> */}
+      {/* <DataFetch /> */}
+      {/* <Toggle /> */}
       <Form />
       <Avatar />
       <Boimela />
