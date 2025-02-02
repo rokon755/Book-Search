@@ -1,9 +1,9 @@
 import Boimela from "./components/Boimela/Boimela"
-import Avatar from "./study/Lifting_The_State_Up/Avatar"
-import DataFetch from "./study/DataFetchAPI/DataFetch";
-import Form from "./study/FormControl/Form"
-import Toggle from './study/Toggler/Toggle';
-import DataFromCustom from "./study/useCustomHook/dataFromCustom";
+import Avatar from "./Learn/Lifting_The_State_Up/Avatar"
+import DataFetch from "./Learn/DataFetchDemo/DataFetch";
+import Form from "./Learn/FormControl/Form"
+import Toggle from './Learn/Toggler/Toggle';
+import DataFromCustom from "./Learn/useCustomHook/dataFromCustom";
 
 
 function App() {
