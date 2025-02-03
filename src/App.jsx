@@ -6,19 +6,21 @@ import Toggle from './Learn/Toggler/Toggle';
 import DataFromCustom from "./Learn/useCustomHook/dataFromCustom";
 import MyUseStateHooks from './Learn/States/MyUseStateHooks';
 import MyUseRef from "./Learn/States/MyUseRef";
+import UseMemoHooks from "./Learn/States/UseMemoHooks";
 
 
 function App() {
 
   return (
     <>
+      {/* <UseMemoHooks /> */}
       {/* <MyUseRef /> */}
-      <DataFromCustom />
-      <Form />
-      <DataFetch />
-      <Toggle />
-      <MyUseStateHooks />
-      <Avatar />
+      {/* <MyUseStateHooks /> */}
+      {/* <Form /> */}
+      {/* <DataFromCustom /> */}
+      {/* <DataFetch /> */}
+      {/* <Toggle /> */}
+      {/* <Avatar /> */}
       <Boimela />
 
     </>
