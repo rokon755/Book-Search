@@ -13,14 +13,14 @@ function App() {
 
   return (
     <>
-      {/* <UseMemoHooks /> */}
-      {/* <MyUseRef /> */}
-      {/* <MyUseStateHooks /> */}
-      {/* <Form /> */}
-      {/* <DataFromCustom /> */}
-      {/* <DataFetch /> */}
-      {/* <Toggle /> */}
-      {/* <Avatar /> */}
+      <UseMemoHooks />
+      <MyUseRef />
+      <MyUseStateHooks />
+      <Form />
+      <DataFromCustom />
+      <DataFetch />
+      <Toggle />
+      <Avatar />
       <Boimela />
 
     </>
