@@ -7,12 +7,14 @@ import DataFromCustom from "./Learn/useCustomHook/dataFromCustom";
 import MyUseStateHooks from './Learn/States/MyUseStateHooks';
 import MyUseRef from "./Learn/States/MyUseRef";
 import UseMemoHooks from "./Learn/States/UseMemoHooks";
+import UseHeaderContext from "./Learn/usecontext/UseHeaderContext";
 
 
 function App() {
 
   return (
     <>
+      <UseHeaderContext />
       <UseMemoHooks />
       <MyUseRef />
       <MyUseStateHooks />
