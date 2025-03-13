@@ -55,6 +55,22 @@
   background: #eee;
   transform: translateX(-550px);
   transition: all 0.6s;
+  position: relative;
+}
+.toggleList span.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #ccc;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 .toggleList.toggleOn {
   opacity: 1;

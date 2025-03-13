@@ -16,7 +16,9 @@ const ToggleSwitch = () => {
           <span>{isOn ? "Show" : "Hide"}</span>
         </div>
       </div >
+
       <ul className={`toggleList ${isOn ? "toggleOn" : "toggleOff"} `}>
+        <span className='close' onClick={handleToggleSwitch}>X</span>
         <li>Home</li>
         <li>About</li>
         <li>Portfolio</li>
