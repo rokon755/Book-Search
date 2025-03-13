@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+
+// Icons
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 
 import "./ToggleSwitch.css";
 
@@ -21,7 +24,7 @@ const ToggleSwitch = () => {
       </div >
 
       <ul className={`toggleList ${isOn ? "toggleOn" : "toggleOff"} `}>
-        <span className='close' onClick={handleToggleSwitch}>X</span>
+        <span className='close' onClick={handleToggleSwitch}><IoClose /></span>
         <li>Home</li>
         <li>About</li>
         <li>Portfolio</li>
