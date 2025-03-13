@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
+
 import "./ToggleSwitch.css";
 
 const ToggleSwitch = () => {
@@ -13,7 +16,7 @@ const ToggleSwitch = () => {
     <>
       <div className='toggle-switch' style={{ backgroundColor: isOn ? "#4caf50" : "#f44336" }} onClick={handleToggleSwitch}>
         <div className={`switch ${isOn ? "on" : "off"}`}>
-          <span>{isOn ? "Show" : "Hide"}</span>
+          <span>{isOn ? <BsArrowLeft /> : <BsArrowRight />}</span>
         </div>
       </div >
 

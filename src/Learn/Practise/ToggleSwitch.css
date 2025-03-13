@@ -23,7 +23,7 @@
   top: 5px;
   left: 5px;
   transition: transform 0.3s linear, background-color 0.3s linear;
-  border: 0.2rem solid #ccc;
+  border: 2px solid #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -67,12 +67,16 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background: #ccc;
+  background: #f44336;
   font-size: 14px;
   border-radius: 50px;
   cursor: pointer;
+  color: #fff;
 }
 .toggleList.toggleOn {
   opacity: 1;
   transform: translateX(0px);
+}
+.switch span {
+  font-size: 24px;
 }
