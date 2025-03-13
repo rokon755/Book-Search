@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      {/* <UseHeaderContext />
+      <UseHeaderContext />
       <UseMemoHooks />
       <MyUseRef />
       <MyUseStateHooks />
@@ -24,8 +24,7 @@ function App() {
       <DataFetch />
       <Toggle />
       <Avatar />
-      <Boimela /> */}
-
+      <Boimela />
       <Practices />
 
     </>
