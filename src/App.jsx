@@ -8,14 +8,15 @@ import MyUseStateHooks from './Learn/States/MyUseStateHooks';
 import MyUseRef from "./Learn/States/MyUseRef";
 import UseMemoHooks from "./Learn/States/UseMemoHooks";
 import UseHeaderContext from "./Learn/usecontext/UseHeaderContext";
-import Practices from "./Learn/Practise/ToggleSwitch";
+import ToggleSwitch from "./Learn/Practise/ToggleSwitch";
+import RegistrationForm from "./Learn/Practise/registation/RegistrationForm";
 
 
 function App() {
 
   return (
     <>
-      <UseHeaderContext />
+      {/* <UseHeaderContext />
       <UseMemoHooks />
       <MyUseRef />
       <MyUseStateHooks />
@@ -25,7 +26,9 @@ function App() {
       <Toggle />
       <Avatar />
       <Boimela />
-      <Practices />
+      <ToggleSwitch /> */}
+      <RegistrationForm />
+
 
     </>
   )
