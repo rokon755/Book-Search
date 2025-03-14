@@ -126,9 +126,11 @@ const RegistrationForm = () => {
           <p style={{ color: "red" }}>{errors.phone}</p>
         </div>
 
-        <button type="submit" className='bg-blue-600 cursor-pointer text-white p-3 pl-6 pr-6 mt-3 rounded-md'>Register</button>
+        <button type="submit" className='bg-blue-600 cursor-pointer text-white p-3 pl-6 pr-6 mt-3 mb-3 rounded-md'>Register</button>
+
       </form>
-      {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
+      {successMessage && <p style={{ color: "green", fontWeight: "bold" }}>{successMessage}</p>}
+
     </div>
   );
 };
