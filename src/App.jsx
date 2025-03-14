@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      {/* <UseHeaderContext />
+      <UseHeaderContext />
       <UseMemoHooks />
       <MyUseRef />
       <MyUseStateHooks />
@@ -26,7 +26,7 @@ function App() {
       <Toggle />
       <Avatar />
       <Boimela />
-      <ToggleSwitch /> */}
+      <ToggleSwitch />
       <RegistrationForm />
 
 
