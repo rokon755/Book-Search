@@ -24,9 +24,11 @@ const UseMemoHooks = () => {
 
   return (
     <div className='text-center p-10'>
+      <h1 className='text-2xl mb-4'>UseMemo Hooks</h1>
       <input type='number' value={number} onChange={setterNumber} className='border-1 border-gray-200 p-1.5 mt-3 rounded-md' />
-      <h1 className='text-2xl mb-3'>Cube Number is: {result}</h1>
-      <h1>Increase Value: {value}</h1>
+
+      <h1 className='text-2xl mb-3 mt-8'>Cube Number is: {result}</h1>
+      <h1 className='mb-5'>Increase Value: {value}</h1>
       <button className='bg-blue-500 text-white pl-5 pr-5 pt-2 pb-2 rounded-md' onClick={increaseValue}>++</button>
     </div>
   )

@@ -24,7 +24,7 @@ const Avatar = () => {
   listUL.map((list) => {
     const result =
       <div key={list.id} className="mb-5.5 text-center">
-        <h1 className="text-2xl font-bold">{list.title}</h1>
+        <h1 className="text-xl font-medium">{list.title}</h1>
         <p >{list.body}</p>
       </div>
     allList.push(result)
@@ -32,6 +32,7 @@ const Avatar = () => {
 
   return (
     <div className="p-8">
+      <h1 className="text-2xl mb-4 text-center font-bold">Lifting The State Up</h1>
       {allList}
       <Parent />
     </div>

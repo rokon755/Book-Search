@@ -57,6 +57,7 @@ const Form = () => {
 
   return (
     <>
+      <h1 className="text-2xl mb-4 mt-4 text-center">Form with custom Validation</h1>
       <form action="" onSubmit={finalValue} className="border-1 border-gray-300 rounded-md mt-5 p-5.5 mb-5 max-w-150 m-auto">
         <div>
           <label className="block text-left">Name</label>
