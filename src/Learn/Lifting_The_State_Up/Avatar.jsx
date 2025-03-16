@@ -31,10 +31,10 @@ const Avatar = () => {
   })
 
   return (
-    <>
+    <div className="p-8">
       {allList}
       <Parent />
-    </>
+    </div>
   )
 }
 

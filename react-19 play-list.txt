@@ -15,11 +15,13 @@
 => Event Handling in React //onClick, 
 => Passing Events as Props in React
 => Event Propagation in React
-=> useState Hook
+=> Hooks
 => Why You Need to Lifting State Up in React
 
 => TODO APP
 
-=> React Controlled vs Uncontrolled Components
+=> React Controlled vs Uncontrolled Components //(Form)
 
 => 48: Registration Forms in React
+=> 51: Login Forms in React
+=> 52: Contact Forms in React

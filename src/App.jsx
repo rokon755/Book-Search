@@ -11,6 +11,8 @@ import UseHeaderContext from "./Learn/usecontext/UseHeaderContext";
 import ToggleSwitch from "./Learn/Practise/ToggleSwitch";
 import RegistrationForm from "./Learn/Practise/registation/RegistrationForm";
 import LoginForm from "./Learn/Practise/Login/LoginForm";
+import PokemonSingle from "./Learn/DataFetchDemo/PokemonSingle";
+import JsonPlaceholderData from "./Learn/DataFetchDemo/JsonPlaceholderData";
 
 
 function App() {
@@ -18,19 +20,35 @@ function App() {
   return (
     <>
       <UseHeaderContext />
+      <hr />
       <UseMemoHooks />
+      <hr />
       <MyUseRef />
+      <hr />
       <MyUseStateHooks />
+      <hr />
       <Form />
+      <hr />
       <DataFromCustom />
+      <hr />
       <DataFetch />
+      <hr />
       <Toggle />
+      <hr />
       <Avatar />
+      <hr />
       <Boimela />
+      <hr />
       <ToggleSwitch />
+      <hr />
       <RegistrationForm />
+      <hr />
       <LoginForm />
-
+      <hr />
+      <PokemonSingle />
+      <hr />
+      <JsonPlaceholderData />
+      <hr />
 
     </>
   )
