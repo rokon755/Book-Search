@@ -17,7 +17,7 @@ const ToggleSwitch = () => {
 
   return (
     <div className='p-8 text-center'>
-      <div className='toggle-switch' style={{ backgroundColor: isOn ? "#4caf50" : "#f44336" }} onClick={handleToggleSwitch}>
+      <div className='toggle-switch' style={{ backgroundColor: isOn ? "#f44336" : "#4caf50" }} onClick={handleToggleSwitch}>
         <div className={`switch ${isOn ? "on" : "off"}`}>
           <span>{isOn ? <BsArrowLeft /> : <BsArrowRight />}</span>
         </div>

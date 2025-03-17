@@ -48,7 +48,7 @@ const PokemonSingle = () => {
       <header>
         <h1 className='text-4xl mb-5 font-bold'>Lets catch Pokemon API</h1>
       </header>
-      <ul className='max-w-md block m-auto shadow p-8 bg-blue-100 rounded-md'>
+      <ul className='max-w-md block m-auto shadow bg-blue-100 rounded-md'>
         <li className='pokemon-card'>
           <figure>
             <img
